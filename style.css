@@ -130,21 +130,58 @@
 	transition: 1s;
 }
 
-#menu_left table
+#list
 {
 	position: absolute;
-	border-spacing: 5px 10px;
-	font-size: 21px;
-	font-weight: 300;
-	line-height: 33.33px;
-	color: #023a5c;
-	font-family: Times New Roman;
 	right: 66px;
 	top: 90px;
-	border-top: dotted 5px #023a5c;
 	width: 113px;
-	
+	/*padding-left: 10px;*/
 }
+
+#menu_left h3
+{
+	margin-bottom: 25px; 
+	font-family: Times New Roman;
+	color: #023a5c;
+	font-size: 23px;
+	font-weight: 300;
+	padding-left: 5px;
+}
+
+#menu_left ul
+{
+	border-top: dotted 5px #023a5c;
+}
+
+#menu_left li
+{
+	list-style-type: none;
+	margin-top: 5px;
+	padding-left: 5px
+}
+
+#menu_left li a
+{
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: 300;
+	color: #023a5c;
+	font-family: Times New Roman;
+}
+
+#menu_left #list li:nth-child(5n+6)
+{
+	border-bottom: dotted 5px #023a5c;
+	padding-bottom: 23px;
+}
+
+
+#menu_left #list li:nth-child(1), #menu_left #list li:nth-child(7), #menu_left #list li:nth-child(12), #menu_left #list li:nth-child(17)
+{
+	padding-top: 23px;
+}
+
 
 #menu_left h6
 {
@@ -155,35 +192,6 @@
 	font-weight: 300;
 	color: #023a5c;
 }
-	
-
-.table_title
-{
-	margin-bottom:25px; 
-	text-align:left;
-}
-
-#menu_left table a
-{
-	text-decoration: none;
-	font-size: 21px;
-	font-weight: 300;
-	line-height: 33.33px;
-	color: #023a5c;
-	font-family: Times New Roman;
-}
-
-#menu_left table tr:nth-child(5n+6) td
-{
-	border-bottom: dotted 5px #023a5c;
-	padding-bottom: 23px;
-}
-
-#menu_left table tr:nth-child(1) td, #menu_left table tr:nth-child(7) td, #menu_left table tr:nth-child(12) td, #menu_left table tr:nth-child(17) td
-{
-	padding-top: 23px;
-}
-
 
 #strzal
 {
@@ -271,6 +279,7 @@
 #section > h1
 {
 	color: #373749;
+	font-family: Avenir;
 	margin-top: 52px;
 	font-size: 20px;
 	font-weight: 300;
@@ -379,44 +388,60 @@
 		width: 149px;
 	}
 	
-	#menu_left table
+	
+	#list
 	{
-		border-spacing: 3px 6px;
-		font-size: 15px;
-		line-height: 23.26px;
 		right: 44px;
 		top: 63px;
-		border-top: dotted 3px #023a5c;
-		width: 80px;
+		/*border: dotted 1px #023a5c;*/
+		width: 90px;
+		/*padding-left: 10px;*/
 	}
 
-	
-	#menu_left table a
+	#menu_left h3
 	{
-		text-decoration: none;
+		margin-bottom: 15px; 
+		font-size: 17px;
+		font-weight: 300;
+		padding-left: 5px;
+	}
+
+	#menu_left ul
+	{
+		border-top: dotted 3px #023a5c;
+	}
+
+	#menu_left li
+	{
+		margin-top: 5px;
+		padding-left: 5px
+	}
+
+	#menu_left li a
+	{
 		font-size: 15px;
 		font-weight: 300;
-		line-height: 23.26px;
 	}
-	
-	#menu_left table tr:nth-child(5n+6) td
+
+	#menu_left #list li:nth-child(5n+6)
 	{
 		border-bottom: dotted 3px #023a5c;
 		padding-bottom: 10px;
 	}
 
-	#menu_left table tr:nth-child(1) td, #menu_left table tr:nth-child(7) td, #menu_left table tr:nth-child(12) td, #menu_left table tr:nth-child(17) td
+
+	#menu_left #list li:nth-child(1), #menu_left #list li:nth-child(7), #menu_left #list li:nth-child(12), #menu_left #list li:nth-child(17)
 	{
 		padding-top: 10px;
 	}
 	
-	#menu_left table tr td a img
+	#menu_left #list li a img
 	{
 		width: 9px;
 		height: 21px;
 	}
 	
-	#menu_left table tr:last-child td a img
+	#menu_left #list li:last-child a img
 	{
 		width: 21px;
 		height: 21px;
@@ -430,11 +455,6 @@
 		font-size: 12px;
 	}
 	
-	.table_title
-	{
-		margin-bottom:15px; 
-	}
-
 	#strzal
 	{
 		top: 299px;
